@@ -15,6 +15,10 @@ public class Main {
 //        RightTriangle2.rightTriangle2(5);
 //        Pattern3.pattern3(5);
 //        DiamondOfStars.diamondOfStars(5);
-        BackwardSlash.backwardSlash(5);
+//        BackwardSlash.backwardSlash(5);
+//        ForwardSlash.forwardSlash(5);
+//        StarPattern.starPattern(5);
+//        NumberPattern.numberPattern(5);
+        NumberPattern.numberPattern2(5);
     }
 }
