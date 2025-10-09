@@ -1,6 +1,9 @@
 import digitTraversal.InverseOfANumber;
 import digitTraversal.ReverseANumber;
 import digitTraversal.RotateANumber;
+import numberSystem.AnyBaseToAnyBase;
+import numberSystem.AnyBaseToDecimal;
+import numberSystem.DecimalToAnyBase;
 import patterns.*;
 
 
@@ -19,6 +22,10 @@ public class Main {
 //        ForwardSlash.forwardSlash(5);
 //        StarPattern.starPattern(5);
 //        NumberPattern.numberPattern(5);
-        NumberPattern.numberPattern2(5);
+//        NumberPattern.numberPattern2(5);
+//        System.out.println(DecimalToAnyBase.decimalToAnyBase(25, 2));
+//        System.out.println(DecimalToAnyBase.decimalToAnyBase(2, 238336));
+//        System.out.println(AnyBaseToDecimal.anyBaseToDecimal(11001101, 2));
+//        System.out.println(AnyBaseToAnyBase.anyBaseToAnyBase(205, 10, 2));
     }
 }
