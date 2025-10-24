@@ -2,7 +2,7 @@ package twoDimensionalArray;
 
 public class MatrixMultiplication {
 
-    public static void multiply(int A[][], int B[][], int C[][], int N) {
+    public static void multiply(int[][] A, int[][] B, int[][] C, int N) {
         // add code here.
         int cd = A[0].length;
         for(int i=0;i<C.length;i++){
