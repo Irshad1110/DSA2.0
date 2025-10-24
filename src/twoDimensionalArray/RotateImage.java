@@ -10,14 +10,11 @@ public class RotateImage {
 
         //transpose
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+            for (int j = i; j < n; j++) {
                 //To traverse only upper triangular half
-                if (j >= i) {
                     int temp = arr[i][j];
                     arr[i][j] = arr[j][i];
                     arr[j][i] = temp;
-                }
-
             }
         }
 
