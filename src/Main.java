@@ -7,6 +7,7 @@ import digitTraversal.ReverseANumber;
 import digitTraversal.RotateANumber;
 import numberSystem.*;
 import patterns.*;
+import strings.PrintAllPalindromic;
 
 import java.util.Arrays;
 
@@ -37,7 +38,8 @@ public class Main {
 //        BarChart.printBarChart(new int[]{3, 1, 0, 7, 5});
 //        System.out.println(Arrays.toString(LeftRotate.rotateArr(new int[]{3, 1, 0, 7, 5}, 3)));
 //        System.out.println(Arrays.toString(Subtract2Arrays.subtract(new int[]{9, 9, 9, 3, 3}, new int[]{1, 0, 7, 4})));
-        SubarrayOfArray.printSubarrays(new int[]{10, 20, 30});
+//        SubarrayOfArray.printSubarrays(new int[]{10, 20, 30});
+        PrintAllPalindromic.printAllPalindromicSubstrings("naman");
 
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
