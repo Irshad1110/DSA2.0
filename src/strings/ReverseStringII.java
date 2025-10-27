@@ -8,29 +8,20 @@ public class ReverseStringII {
     // less than 2k but greater than or equal to k characters, then reverse the first k
     // characters and leave the other as original.
 
-    public StringBuilder reverse(StringBuilder sb, int start, int end) {
-        while(start<end){
-            char temp = sb.charAt(start);
-            sb.setCharAt(start, sb.charAt(end));
-            sb.setCharAt(end, temp);
-            start++;end--;
-        }
-        return sb;
-    }
-
     public String reverseStr(String s, int k) {
         int i = 0;
         int len = s.length();
         StringBuilder sb = new StringBuilder(s);
         while(i<len){
-            int j = i;
-            int num = 0;
-            while(j<len && num < k){
-                j++;
-                num++;
+            int hi = Math.min(i + k, len) - 1;
+            int lo = i ;
+            while(lo<hi){
+                char temp = sb.charAt(lo);
+                sb.setCharAt(lo, sb.charAt(hi));
+                sb.setCharAt(hi, temp);
+                lo++;hi--;
             }
-            sb = reverse(sb, i, j-1);
-            i = j+k;
+            i = i+2*k;
         }
         return sb.toString();
     }

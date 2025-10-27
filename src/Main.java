@@ -8,7 +8,9 @@ import digitTraversal.RotateANumber;
 import numberSystem.*;
 import patterns.*;
 import strings.CompressCharArray;
+import strings.PalindromeCheck;
 import strings.PrintAllPalindromic;
+import strings.ReverseStringIII;
 
 import java.util.Arrays;
 
@@ -41,9 +43,12 @@ public class Main {
 //        System.out.println(Arrays.toString(Subtract2Arrays.subtract(new int[]{9, 9, 9, 3, 3}, new int[]{1, 0, 7, 4})));
 //        SubarrayOfArray.printSubarrays(new int[]{10, 20, 30});
 //        PrintAllPalindromic.printAllPalindromicSubstrings("naman");
-        char[] arr = new char[]{'a', 'a', 'b', 'b', 'c'};
-        CompressCharArray.compress(arr);
-        System.out.print(arr);
+//        char[] arr = new char[]{'a', 'a', 'b', 'b', 'c'};
+//        CompressCharArray.compress(arr);
+//        System.out.print(arr);
+//        PalindromeCheck palindromeCheck = new PalindromeCheck();
+//        System.out.println(palindromeCheck.isPalindrome("race a Car"));
+//        System.out.println(ReverseStringIII.reverseWords("Let's take test"));
 
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
