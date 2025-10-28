@@ -7,6 +7,7 @@ import digitTraversal.ReverseANumber;
 import digitTraversal.RotateANumber;
 import numberSystem.*;
 import patterns.*;
+import recursion.*;
 import strings.CompressCharArray;
 import strings.PalindromeCheck;
 import strings.PrintAllPalindromic;
@@ -50,6 +51,11 @@ public class Main {
 //        System.out.println(palindromeCheck.isPalindrome("race a Car"));
 //        System.out.println(ReverseStringIII.reverseWords("Let's take test"));
 
+//        PrintDecreasing.printDecreasing(5);
+//        PrintDecreasingIncreasing.printIncreasingDecreasing(5);
+//        System.out.println(Factorial.factorial(5));
+//        PrintZigZag.printZigZag(3);
+        TowerOfHanoi.towerOfHanoi(3, 1, 3, 2);
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
     }
