@@ -8,6 +8,8 @@ import digitTraversal.RotateANumber;
 import numberSystem.*;
 import patterns.*;
 import recursion.*;
+import recursion.subsetCategory.SubsequenceOfString;
+import recursion.subsetCategory.SubsetsOfArray;
 import strings.CompressCharArray;
 import strings.PalindromeCheck;
 import strings.PrintAllPalindromic;
@@ -57,7 +59,10 @@ public class Main {
 //        PrintZigZag.printZigZag(3);
 //        TowerOfHanoi.towerOfHanoi(3, 1, 3, 2);
 //        PrintArray.printArray(new int[]{1, 2, 3, 4, 5});
-        System.out.println(Arrays.toString(AllIndices.allIndices(new int[]{8, 2, 3, 4, 4, 5, 6, 4}, 4)));
+//        System.out.println(Arrays.toString(AllIndices.allIndices(new int[]{8, 4, 3, 5, 6}, 4)));
+//        System.out.println(SubsetsOfArray.subsetsRecursive(new int[]{1, 2, 3}));
+//        System.out.println(SubsequenceOfString.subsequence("abc"));
+        SubsequenceOfString.printSubsequence("abc");
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
     }
