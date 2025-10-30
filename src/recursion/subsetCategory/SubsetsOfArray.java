@@ -43,7 +43,7 @@ public class SubsetsOfArray {
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
         for(ArrayList<Integer> sub : smallAns) {
             // Add the subset as it is
-            ans.add(new ArrayList<>(sub));
+            ans.add(sub);
 
             // Create a new subset including arr[n]
             ArrayList<Integer> newSub = new ArrayList<>(sub);
@@ -52,6 +52,20 @@ public class SubsetsOfArray {
         }
         return ans;
 
+    }
+
+    //print subsets
+    public static void printSubsets(int arr[]) {
+        printSubsets(arr, arr.length-1, "");
+    }
+
+    public static void printSubsets(int[] arr, int n, String asf) {
+        if(n==-1){
+            System.out.println(asf);
+            return;
+        }
+        printSubsets(arr, n-1, asf);
+        printSubsets(arr, n-1, arr[n]+asf);
 
     }
 }

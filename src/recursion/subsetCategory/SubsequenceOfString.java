@@ -50,8 +50,9 @@ public class SubsequenceOfString {
             System.out.println(asf);
             return;
         }
-        printSubsequence(str, n-1, asf);
-        printSubsequence(str, n-1, str.charAt(n) + asf);
+
+        printSubsequence(str, n-1, str.charAt(n) + asf);//yes call
+        printSubsequence(str, n-1, asf);//no call
 
     }
 }
