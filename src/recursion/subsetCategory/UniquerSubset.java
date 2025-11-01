@@ -27,7 +27,8 @@ public class UniquerSubset {
 
         //no call
         subsetsWithDup(arr, n-1, curr, false);
-        //yes call
+        //yes call (if last call was no call and this elem is same as last elem, do not
+        // make yes call and return from here itself)
         if(n<arr.length-1&&arr[n]==arr[n+1] && !prev) {
             return;
         }
