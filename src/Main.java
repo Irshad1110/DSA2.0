@@ -8,7 +8,9 @@ import digitTraversal.RotateANumber;
 import numberSystem.*;
 import patterns.*;
 import recursion.*;
+import recursion.mazePathCategory.GetStairPaths;
 import recursion.mazePathCategory.PrintStairPaths;
+import recursion.subsetCategory.BeautifulArrangement;
 import recursion.subsetCategory.SubsequenceOfString;
 import recursion.subsetCategory.SubsetsOfArray;
 import strings.CompressCharArray;
@@ -65,7 +67,9 @@ public class Main {
 //        SubsetsOfArray.printSubsets(new int[]{1, 2, 3});
 //        System.out.println(SubsequenceOfString.subsequence("abc"));
 //        SubsequenceOfString.printSubsequence("abc");
-        PrintStairPaths.printStairPaths(4);
+//        PrintStairPaths.printStairPaths(2);
+//        System.out.println(GetStairPaths.getStairPaths(3));
+//        System.out.println(BeautifulArrangement.countArrangement(5));
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
     }
