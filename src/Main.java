@@ -13,6 +13,8 @@ import recursion.mazePathCategory.PrintStairPaths;
 import recursion.subsetCategory.BeautifulArrangement;
 import recursion.subsetCategory.SubsequenceOfString;
 import recursion.subsetCategory.SubsetsOfArray;
+import sorting.BubbleSort;
+import sorting.MergeTwoSortedArrays;
 import strings.CompressCharArray;
 import strings.PalindromeCheck;
 import strings.PrintAllPalindromic;
@@ -70,6 +72,9 @@ public class Main {
 //        PrintStairPaths.printStairPaths(2);
 //        System.out.println(GetStairPaths.getStairPaths(3));
 //        System.out.println(BeautifulArrangement.countArrangement(5));
+
+//        System.out.print(Arrays.toString(BubbleSort.bubbleSort(new int[]{10, 2, 31, 14, 5, 99, 0, -1, 22})));
+        System.out.print(Arrays.toString(MergeTwoSortedArrays.mergeArrays(new int[]{2, 4, 8, 15, 99, 100}, new int[]{3, 5,14,31,114})));
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
     }
