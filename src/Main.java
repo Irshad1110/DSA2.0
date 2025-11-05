@@ -14,7 +14,9 @@ import recursion.subsetCategory.BeautifulArrangement;
 import recursion.subsetCategory.SubsequenceOfString;
 import recursion.subsetCategory.SubsetsOfArray;
 import sorting.BubbleSort;
+import sorting.MergeTwoSorted;
 import sorting.MergeTwoSortedArrays;
+import sorting.MergeTwoSortedUsingShellSort;
 import strings.CompressCharArray;
 import strings.PalindromeCheck;
 import strings.PrintAllPalindromic;
@@ -74,7 +76,12 @@ public class Main {
 //        System.out.println(BeautifulArrangement.countArrangement(5));
 
 //        System.out.print(Arrays.toString(BubbleSort.bubbleSort(new int[]{10, 2, 31, 14, 5, 99, 0, -1, 22})));
-        System.out.print(Arrays.toString(MergeTwoSortedArrays.mergeArrays(new int[]{2, 4, 8, 15, 99, 100}, new int[]{3, 5,14,31,114})));
+//        System.out.print(Arrays.toString(MergeTwoSortedArrays.mergeArrays(new int[]{2, 4, 8, 15, 99, 100}, new int[]{3, 5,14,31,114})));
+        int[] arr1 = new int[]{2, 4, 8, 15, 99, 100, 0, 0, 0, 0, 0};
+        int[] arr2 = new int[]{3, 5,14,31,114};
+//        MergeTwoSorted.mergeArrays(arr1,arr2);
+        MergeTwoSortedUsingShellSort.mergeUsingShellSort(arr1, 6, arr2, 5);
+        System.out.println(Arrays.toString(arr1) + " " + Arrays.toString(arr2));
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
     }
