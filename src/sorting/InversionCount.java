@@ -42,7 +42,7 @@ public class InversionCount {
 
     }
     static int inversionCount(int arr[]) {
-        return mergeSort(arr, 0, arr.length);
+        return mergeSort(arr, 0, arr.length-1);
 
     }
 }
