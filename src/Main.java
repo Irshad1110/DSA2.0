@@ -14,6 +14,8 @@ import recursion.subsetCategory.BeautifulArrangement;
 import recursion.subsetCategory.SubsequenceOfString;
 import recursion.subsetCategory.SubsetsOfArray;
 import sorting.*;
+import sorting.countSort.CountSort;
+import sorting.countSort.FrequencySortString;
 import strings.CompressCharArray;
 import strings.PalindromeCheck;
 import strings.PrintAllPalindromic;
@@ -79,7 +81,9 @@ public class Main {
 ////        MergeTwoSorted.mergeArrays(arr1,arr2);
 //        MergeTwoSortedUsingShellSort.mergeUsingShellSort(arr1, 6, arr2, 5);
 //        System.out.println(Arrays.toString(arr1) + " " + Arrays.toString(arr2));
-        System.out.println(GlobalLocalCount.isIdealPermutation(new int[]{1, 0, 2}));
+//        System.out.println(GlobalLocalCount.isIdealPermutation(new int[]{1, 0, 2}));
+//        System.out.println(Arrays.toString(CountSort.sortArray(new int[]{1, 4, 5, 2, -1, 3, 3, 2})));
+        System.out.println(FrequencySortString.frequencySort("cccaaa"));
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
     }
