@@ -1,7 +1,8 @@
 package sorting.countSort;
 
-public class RadixSort {
+public class MaximumGap {
 
+    //Leetcode 164
     public int[] countSortOnDigit(int[] nums, int place) {
 
         //first we build frequency array like always
@@ -28,12 +29,18 @@ public class RadixSort {
         return res;
     }
 
-    public int[] sortArray(int[] nums){
+    public int maximumGap(int[] nums) {
         int i = 1;
         while(i<=1000000000){
             nums = countSortOnDigit(nums, i);
             i*=10;
         }
-        return nums;
+        int max = 0;
+        for(int p=0;p<nums.length-1;p++){
+            int gap = nums[p+1] - nums[p];
+            if(gap>max) max = gap;
+        }
+        return max;
+
     }
 }

@@ -8,7 +8,7 @@ public class FrequencySort {
         int max = 100, min = -100;
         int[] freq = new int[max-min+1];
         //filling the frequency array
-        for(int val : nums) freq[val-min]++;
+        for(int val : nums) freq[val-min]++; //value to index
 
         ArrayList<Integer>[] buckets = new ArrayList[nums.length+1];
 
@@ -18,7 +18,7 @@ public class FrequencySort {
         //filling the buckets
         for(int idx = 0; idx < freq.length;idx++){
             int count = freq[idx];
-            buckets[count].add(idx+min);
+            buckets[count].add(idx+min);//index to value
         }
 
         int[] res = new int[nums.length];

@@ -1,4 +1,4 @@
-package arrayQuestions;
+package binarySearch;
 
 public class BinarySearch {
 

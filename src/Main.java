@@ -16,12 +16,15 @@ import recursion.subsetCategory.SubsetsOfArray;
 import sorting.*;
 import sorting.countSort.CountSort;
 import sorting.countSort.FrequencySortString;
+import sorting.countSort.MinimumTime;
 import strings.CompressCharArray;
 import strings.PalindromeCheck;
 import strings.PrintAllPalindromic;
 import strings.ReverseStringIII;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 
 public class Main {
@@ -83,7 +86,11 @@ public class Main {
 //        System.out.println(Arrays.toString(arr1) + " " + Arrays.toString(arr2));
 //        System.out.println(GlobalLocalCount.isIdealPermutation(new int[]{1, 0, 2}));
 //        System.out.println(Arrays.toString(CountSort.sortArray(new int[]{1, 4, 5, 2, -1, 3, 3, 2})));
-        System.out.println(FrequencySortString.frequencySort("cccaaa"));
+//        System.out.println(FrequencySortString.frequencySort("cccaaa"));
+        List<String> listMinTime = new ArrayList<>();
+        listMinTime.add("01:01");
+        listMinTime.add("02:01");
+        System.out.println(MinimumTime.findMinDifference(listMinTime));
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
     }
