@@ -13,7 +13,7 @@ public class FloorAndCeil {
                 left = mid+1;
             }
         }
-        ans[0] = arr[left-1];
+        ans[0] = arr[left-1];//or right
         left = 0;
         right = n-1;
         while(left<=right){
@@ -24,7 +24,7 @@ public class FloorAndCeil {
             }
 
         }
-        ans[1] = arr[right+1];
+        ans[1] = arr[right+1];//or left
         return ans;
     }
 }
