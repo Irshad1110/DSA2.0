@@ -87,11 +87,29 @@ public class Main {
 //        System.out.println(GlobalLocalCount.isIdealPermutation(new int[]{1, 0, 2}));
 //        System.out.println(Arrays.toString(CountSort.sortArray(new int[]{1, 4, 5, 2, -1, 3, 3, 2})));
 //        System.out.println(FrequencySortString.frequencySort("cccaaa"));
-        List<String> listMinTime = new ArrayList<>();
-        listMinTime.add("01:01");
-        listMinTime.add("02:01");
-        System.out.println(MinimumTime.findMinDifference(listMinTime));
+//        List<String> listMinTime = new ArrayList<>();
+//        listMinTime.add("01:01");
+//        listMinTime.add("02:01");
+//        System.out.println(MinimumTime.findMinDifference(listMinTime));
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
+
+
+
+
+
+//        for(int index = 0;  index < 5; index++) {
+            InputDto input = new InputDto(3, 5, 100, "a", "d");
+            List<String> answerFirst = ApiQuestion.firstEndPoint(input);
+            System.out.println(answerFirst);
+//        }
+
+
+
+
+
+
+
+
     }
 }
