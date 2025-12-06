@@ -5,6 +5,8 @@ import arrayQuestions.Subtract2Arrays;
 import digitTraversal.InverseOfANumber;
 import digitTraversal.ReverseANumber;
 import digitTraversal.RotateANumber;
+import java8.Employee;
+import java8.Questions;
 import numberSystem.*;
 import patterns.*;
 import recursion.*;
@@ -94,22 +96,19 @@ public class Main {
         //Study each question by understanding the concept mainly.
         //you know that once you understand concept writing code is easy.
 
-
-
-
-
 //        for(int index = 0;  index < 5; index++) {
-            InputDto input = new InputDto(3, 5, 100, "a", "d");
-            List<String> answerFirst = ApiQuestion.firstEndPoint(input);
-            System.out.println(answerFirst);
+//            InputDto input = new InputDto(3, 5, 100, "a", "d");
+//            List<String> answerFirst = ApiQuestion.firstEndPoint(input);
+//            System.out.println(answerFirst);
 //        }
 
 
-
-
-
-
-
+//        Questions.employeesStartingWithA();
+//        Questions.mergeTwoListAndSortByAge();
+//        Questions.findSumOfEvenNumbersFromList();
+//        Questions.sortByNameAndSalary();
+//        Questions.sortOnGenderAndAgeMoreThan30();
+        Questions.findAllEvenDistinct();
 
     }
 }
