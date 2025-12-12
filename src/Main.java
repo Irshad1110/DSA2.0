@@ -2,10 +2,14 @@ import arrayQuestions.BarChart;
 import arrayQuestions.LeftRotate;
 import arrayQuestions.SubarrayOfArray;
 import arrayQuestions.Subtract2Arrays;
+import cleartax.IssueAssignmentService;
+import cleartax.IssueStatus;
+import cleartax.IssueType;
 import digitTraversal.InverseOfANumber;
 import digitTraversal.ReverseANumber;
 import digitTraversal.RotateANumber;
 import java8.Employee;
+import java8.Practice;
 import java8.Questions;
 import numberSystem.*;
 import patterns.*;
@@ -108,7 +112,90 @@ public class Main {
 //        Questions.findSumOfEvenNumbersFromList();
 //        Questions.sortByNameAndSalary();
 //        Questions.sortOnGenderAndAgeMoreThan30();
-        Questions.findAllEvenDistinct();
+//        Questions.palindrome();
+//        Practice.sortByNameAndAge();
+
+
+
+
+//        System.out.print(Interview.uniqueSum(Arrays.asList(4, 2 , 2, 6, 1, 2, 6)));
+
+
+
+
+        //createIssue(transactionId, issueType, subject, description, email)
+//addAgent(agentEmail, agentName ,List<issueType>)
+//assignIssue(issueId) // -> Issue can be assigned to the agents based on different strategies. For now, assign to any one of the free agents.
+//getIssues(filter) // -> issues against the provided filter
+//updateIssue(issueId, status, resolution)
+//resolveIssue(issueId, resolution)
+//viewAgentsWorkHistory() // -> a list of issue which agents worked on
+
+//        createIssue("T1", "Payment Related", "Payment Failed", "My payment failed but money is debited", "testUser1@test.com");
+//>>> Issue I1 created against transaction "T"
+//
+//        createIssue("T2", "Mutual Fund Related", "Purchase Failed", "Unable to purchase Mutual Fund", "testUser2@test.com");
+//>>> Issue I2 created against transaction "T2"
+//
+//        createIssue("T3", "Payment Related", "Payment Failed", "My payment failed but money is debited", "testUser2@test.com");
+//>>> Issue I3 created against transaction "T3"
+//
+//        addAgent("agent1@test.com", "Agent 1", Arrays.asList("Payment Related", "Gold Related"));
+//>>> Agent A1 created
+//
+//
+//        addAgent("agent2@test.com", "Agent 2", Arrays.asList("Mutual Fund Related"));
+//>>> Agent A2 created
+//
+//
+//        assignIssue("I1")
+//                >>> Issue I1 assigned to agent A1
+//
+//        assignIssue("I2")
+//                >>> Issue I2 assigned to agent A2
+//
+//        assignIssue("I3")
+//                >>> Issue I3 added to waitlist of Agent A1
+
+
+        IssueAssignmentService issueAssignmentService = new IssueAssignmentService();
+        issueAssignmentService.createIssue("T1",
+                IssueType.PAYMENT_RELATED,
+                "payment failed", "payment failed but money debited", "test@abc.com");
+
+        issueAssignmentService.createIssue("T2",
+                IssueType.MUTUAL_FUND_RELATED,
+                "mutual failed", "mutual failed but money debited", "test22@abc.com");
+
+        issueAssignmentService.createIssue("T3",
+                IssueType.INSURANCE_RELATED,
+                "insurance failed", "insurance failed but money debited", "test33@abc.com");
+
+        issueAssignmentService.addAgent("agent1@abc.com", "A1");
+        issueAssignmentService.addAgent("agent2@abc.com", "A2");
+
+
+        issueAssignmentService.assignIssue("T1");
+        issueAssignmentService.assignIssue("T2");
+        issueAssignmentService.assignIssue("T3");
+
+
+        issueAssignmentService.updateIssue("T1", IssueStatus.RESOLVED, "resolved manually");
+
+//        issueAssignmentService
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }
